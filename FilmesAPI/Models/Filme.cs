@@ -13,4 +13,6 @@ public class Filme {
     [Required]
     [Range(70, 600,ErrorMessage ="Duracao < 70min")] public int duracao { get; set; }
 
+    public virtual ICollection<Sessao> sessoes { get; set; }
+
 }
