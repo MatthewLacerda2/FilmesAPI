@@ -8,5 +8,7 @@ public class ReadFilmeDTO {
     public string genero { get; set; }
     public int duracao { get; set; }
     public DateTime HoraConsulta { get; set; } = DateTime.Now;
+    public ICollection<ReadSessaoDTO> sessoes { get; set; }
+    
 
 }

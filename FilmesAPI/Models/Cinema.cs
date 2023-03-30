@@ -16,5 +16,6 @@ namespace FilmesAPI.Models {
 
         public int EnderecoID { get; set; }
         public virtual Endereco endereco { get; set; }
+        public virtual ICollection<Sessao> sessoes { get; set; }
     }
 }
